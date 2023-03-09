@@ -1,0 +1,29 @@
+.note-list {
+  border-right: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 30px);
+  position: fixed;
+  margin-top: 30px;
+  overflow: auto;
+  width: 400px;
+}
+
+.note-list__item {
+  background-color: #f4f4f4;
+  border-bottom: 1px solid gray;
+  height: 20px;
+  padding: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.note-list__item:hover {
+  background-color: wheat;
+  cursor: pointer;
+}
+
+.note-list__item_active {
+  background-color: #e7e7e7;
+}

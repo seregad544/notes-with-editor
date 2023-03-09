@@ -1,0 +1,15 @@
+.editor__container {
+  text-align: center;
+  position: relative;
+  top: 30px;
+  left: 400px;
+  width: calc(100vw - 420px);
+  padding: 10px;
+}
+
+.editor__input {
+  position: absolute;
+  width: 260px;
+  left: 10px;
+  top: -25px;
+}

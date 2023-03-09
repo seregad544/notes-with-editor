@@ -1,0 +1,26 @@
+env:
+  browser: true
+  es2021: true
+extends:
+  - eslint:recommended
+  - plugin:react/recommended
+  - airbnb
+  - plugin:import/recommended
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: latest
+  sourceType: module
+plugins:
+  - react
+  - jam3
+rules: {
+    "jam3/no-sanitizer-with-danger": [
+      2,
+      {
+        "wrapperName": ["sanitizer"]
+      }
+    ],
+    "react/no-danger" : [0],
+    "no-alert": [0],
+  }

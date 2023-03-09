@@ -1,0 +1,41 @@
+.head__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 30px;
+  border-bottom: 1px solid gray;
+  position: fixed;
+  width: 100%;
+}
+
+.head__button-add {
+  border: 0;
+  width: 400px;
+  background-color: #43eebe;
+}
+
+.head__button-add:hover {
+  filter: brightness(80%);
+  cursor: pointer;
+}
+
+.head__toolbar {
+  width: 50px;
+  margin: auto 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.head__toolbar-item_cross {
+  padding-left: 30px;
+  justify-content: end;
+}
+
+.head__toolbar-item {
+  cursor: pointer;
+  width: 20px;
+}
+
+.head__toolbar-item:hover {
+  transform: scale(1.2, 1.2);
+}
