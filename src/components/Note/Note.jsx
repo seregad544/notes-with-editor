@@ -5,12 +5,12 @@ import { selectCurrentNote } from '../../store/notesInfoSlice';
 import './styles.css';
 
 function Note() {
-  const { body: currentNote } = useSelector(selectCurrentNote);
-  const sanitizer = dompurify.sanitize;
+  const note = useSelector(selectCurrentNote);
+  const xssDefense = dompurify.sanitize;
 
   return (
     <div className="note__container">
-      {currentNote ? <div dangerouslySetInnerHTML={{ __html: sanitizer(currentNote) }} /> : null}
+      {note ? <div dangerouslySetInnerHTML={{ __html: xssDefense(note.body) }} /> : null}
     </div>
   );
 }
